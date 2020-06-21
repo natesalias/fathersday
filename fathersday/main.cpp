@@ -43,7 +43,8 @@ int main()
         std::cin >> repeat;
     }
     
-    std::cout << "Thanks for playing, Happy Father's Day!\n"; //If no repeat, output this
+    std::cout << "Thanks for playing, Happy Father's Day! This program will now close.\n"; //If no repeat, output this
+    this_thread::sleep_for(chrono::milliseconds(5000)); //Waiting to kill .exe
     
     return 0;
 }
